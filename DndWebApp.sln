@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DndWebApp", "DndWebApp.csproj", "{CAA7E37A-51CC-4738-924A-3C926A8DDDB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DndWebApp.Tests", "..\DndWebApp.Tests\DndWebApp.Tests.csproj", "{6F3EEA13-9E46-4B5B-AB0D-D977A1F117C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAA7E37A-51CC-4738-924A-3C926A8DDDB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA7E37A-51CC-4738-924A-3C926A8DDDB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA7E37A-51CC-4738-924A-3C926A8DDDB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA7E37A-51CC-4738-924A-3C926A8DDDB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F3EEA13-9E46-4B5B-AB0D-D977A1F117C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F3EEA13-9E46-4B5B-AB0D-D977A1F117C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F3EEA13-9E46-4B5B-AB0D-D977A1F117C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F3EEA13-9E46-4B5B-AB0D-D977A1F117C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10B91863-BBA7-42F6-833B-F470FC1C0E20}
+	EndGlobalSection
+EndGlobal
