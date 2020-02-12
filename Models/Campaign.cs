@@ -1,15 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DndWebApp.Models
 {
     public class Campaign
     {
-        public int Id { get; set; }
+        [Key]
+        public int CampaginId { get; set; }
+        [Required]
         public string Name { get; set; }
         public string Description { get; set; }
-        public virtual List<User> Users { get; set; }
+        [Required]
+        [ForeignKey("DungeonMasterId")]
+        public User DungeonMaster { get; set; }
+        [Required]
+        public int DungeonMasterId { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Display(Name = "Date Created")]
+        public DateTime DateCreated { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+        [Display(Name = "Date Updated")]
+        public DateTime DateUpdated { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DndWebApp.Models
 {
@@ -11,8 +11,15 @@ namespace DndWebApp.Models
     }
     public class Role
     {
+        [Key]
+        public int RoleId { get; set; }
         public Roles role { get; set; }
         public string Description { get; set; }
-        public List<User> Users { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public DateTime DateCreated { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+        public DateTime DateUpdated { get; set; }
+        public virtual ICollection<User> Users { get; set; }
+
     }
 }
